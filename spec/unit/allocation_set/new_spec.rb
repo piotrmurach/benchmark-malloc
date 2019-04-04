@@ -30,7 +30,7 @@ RSpec.describe Benchmark::Malloc::AllocationSet do
     expect(alloc_set.count_memory[Object]).to be <= 40
     expect(alloc_set.count_memory[Symbol]).to eq 0
 
-    expect(alloc_set.total_memory).to be > 250
+    expect(alloc_set.total_memory).to be < 300
   end
 
   it "filters allocated objects" do
