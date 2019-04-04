@@ -23,7 +23,7 @@ RSpec.describe Benchmark::Malloc do
 
     # allocated
     expect(sample.allocated.total_objects).to be <= 5
-    expect(sample.allocated.total_memory).to eq(120)
+    expect(sample.allocated.total_memory).to be <= 200
     expect(sample.allocated.count_objects).to eq({
       Object => 1, String => 1, Array => 1})
 
@@ -32,8 +32,8 @@ RSpec.describe Benchmark::Malloc do
     expect(sample.allocated.count_memory[Array]).to be <= 40
 
     # retained
-    expect(sample.retained.total_objects).to be <= 3
-    expect(sample.retained.total_memory).to be <= 120
+    expect(sample.retained.total_objects).to be <= 5
+    expect(sample.retained.total_memory).to be <= 200
     expect(sample.retained.count_objects).to eq({
       Object => 1, String => 1, Array => 1})
 
