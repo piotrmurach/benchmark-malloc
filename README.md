@@ -3,7 +3,6 @@
 [![Gem Version](https://badge.fury.io/rb/benchmark-malloc.svg)][gem]
 [![Build Status](https://secure.travis-ci.org/piotrmurach/benchmark-malloc.svg?branch=master)][travis]
 [![Build status](https://ci.appveyor.com/api/projects/status/cp102e33c2a7fx83?svg=true)][appveyor]
-[![Code Climate](https://codeclimate.com/github/piotrmurach/benchmark-malloc/badges/gpa.svg)][codeclimate]
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8fbd4a0423fd78d8bee/maintainability)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/github/piotrmurach/benchmark-malloc/badge.svg?branch=master)][coverage]
 [![Inline docs](http://inch-ci.org/github/piotrmurach/benchmark-malloc.svg?branch=master)][inchpages]
