@@ -30,7 +30,7 @@ RSpec.describe Benchmark::Malloc do
     expect(sample.allocated.count_objects[String]).to be <= 3
 
     expect(sample.allocated.count_memory[Object]).to be <= 40
-    expect(sample.allocated.count_memory[String]).to be <= 40
+    expect(sample.allocated.count_memory[String]).to be <= 120
     expect(sample.allocated.count_memory[Array]).to be <= 40
 
     # retained
@@ -42,7 +42,7 @@ RSpec.describe Benchmark::Malloc do
     expect(sample.retained.count_objects[String]).to be <= 3
 
     expect(sample.retained.count_memory[Object]).to be <= 40
-    expect(sample.retained.count_memory[String]).to be <= 40
+    expect(sample.retained.count_memory[String]).to be <= 120
     expect(sample.retained.count_memory[Array]).to be <= 40
   end
 
