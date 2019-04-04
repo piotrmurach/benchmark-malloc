@@ -26,7 +26,7 @@ RSpec.describe Benchmark::Malloc::AllocationSet do
     allocations = [object_alloc, hash_alloc, string_alloc]
     alloc_set = described_class.new(allocations)
 
-    expect(alloc_set.count_memory[Hash]).to be > 220
+    expect(alloc_set.count_memory[Hash]).to be < 240
     expect(alloc_set.count_memory[Object]).to eq 40
     expect(alloc_set.count_memory[Symbol]).to eq 0
 

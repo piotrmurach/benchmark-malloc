@@ -5,7 +5,7 @@ RSpec.describe Benchmark::Malloc::Allocation do
     object = Object.new
     alloc = described_class.new(object)
 
-    expect(alloc.memsize).to eq(40)
+    expect(alloc.memsize).to be <= 40
     expect(alloc.source_line).to eq(nil)
     expect(alloc.method_id).to eq(nil)
     expect(alloc.class_path).to eq(nil)
@@ -16,6 +16,9 @@ RSpec.describe Benchmark::Malloc::Allocation do
     object = Object.new
     alloc = described_class.new(object)
 
-    expect(alloc.extract(:class, :memsize)).to eq([Object, 40])
+    extracted = alloc.extract(:class, :memsize)
+
+    expect(extracted[0]).to eq(Object)
+    expect(extracted[1]).to be <= 40
   end
 end
