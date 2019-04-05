@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "benchmark-malloc"
   spec.version       = Benchmark::Malloc::VERSION
   spec.authors       = ["Piotr Murach"]
-  spec.email         = ["pmurach@gmail.com"]
+  spec.email         = ["me@piotrmurach.com"]
 
   spec.summary       = %q{Trace memory allocations and collect stats.}
   spec.description   = %q{Trace memory allocations and collect stats.}
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github.com/piotrmurach/benchmark-malloc"
-    spec.metadata["changelog_uri"] = "https://github.com/piotrmurach/benchmark-malloc"
+    spec.metadata["changelog_uri"] = "https://github.com/piotrmurach/benchmark-malloc/CHANGELOG.md"
   end
 
   spec.files         = Dir['{lib,spec}/**/*.rb']
