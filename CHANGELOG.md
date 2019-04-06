@@ -1,6 +1,6 @@
 # Change log
 
-## [v0.1.0] - 2016-05-05
+## [v0.1.0] - 2016-04-06
 
 Initial release
 
