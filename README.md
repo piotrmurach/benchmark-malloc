@@ -35,7 +35,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-benc_malloc = Benchmark::Malloc.new
+bench_malloc = Benchmark::Malloc.new
 
 stats = bench_malloc.run { %w[foo bar baz].sort[1] }
 
