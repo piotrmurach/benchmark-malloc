@@ -4,7 +4,7 @@ RSpec.describe Benchmark::Malloc do
   it "traces only new object allocations" do
     %i[foo bar baz].freeze
 
-    sample = described_class.run do
+    sample = described_class.trace do
       %i[foo bar baz].freeze
     end
 
@@ -47,7 +47,7 @@ RSpec.describe Benchmark::Malloc do
   end
 
   it "traces large number of objects" do
-    result = described_class.run do
+    result = described_class.trace do
       10.times { |i| [i.to_s, {}] }
     end
 

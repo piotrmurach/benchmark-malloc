@@ -18,10 +18,16 @@ module Benchmark
     # @api public
     attr_reader :warmup
 
-    def self.run(&work)
+    # Trace memory allocations
+    #
+    # @api public
+    def self.trace(&work)
       Malloc.new.run(&work)
     end
 
+    # Create a memory allocation tracer
+    #
+    # @api public
     def initialize(warmup: 0)
       @warmup = warmup
       @running = false
