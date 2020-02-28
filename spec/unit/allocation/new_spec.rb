@@ -21,4 +21,24 @@ RSpec.describe Benchmark::Malloc::Allocation do
     expect(extracted[0]).to eq(Object)
     expect(extracted[1]).to be <= 40
   end
+
+  it "compares two different objects" do
+    object_a = Object.new
+    object_b = Object.new
+
+    alloc_a = described_class.new(object_a)
+    alloc_b = described_class.new(object_b)
+
+    expect(alloc_a).to_not eq(alloc_b)
+  end
+
+  it "compares the same object" do
+    object_a = Object.new
+    object_b = object_a
+
+    alloc_a = described_class.new(object_a)
+    alloc_b = described_class.new(object_b)
+
+    expect(alloc_a).to eq(alloc_b)
+  end
 end
