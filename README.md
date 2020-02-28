@@ -16,6 +16,8 @@
 
 > Trace memory allocations and collect stats.
 
+The **Benchmark::Malloc** is used by [rspec-benchmark](https://github.com/piotrmurach/rspec-benchmark)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -44,6 +46,29 @@ stats.allocated.total_objects # => 3
 stats.allocated.total_memory # => 120
 ```
 
+## API
+
+### start & stop
+
+You can manually begin tracing memory allocations with the `start` method:
+
+```ruby
+malloc = Benchmark::Malloc.new
+malloc.start
+```
+
+Any Ruby code after the `start` invocation will count towards the stats:
+
+```ruby
+%w[foo bar baz].sort[1]
+```
+
+Finally, to finish tracing call the `stop` method:
+
+```ruby
+malloc.stop
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -52,7 +77,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/benchmark-malloc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/piotrmurach/benchmark-malloc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
