@@ -1,1 +1,1 @@
-require_relative 'benchmark/malloc'
+require_relative "benchmark/malloc"

@@ -1,4 +1,4 @@
-# frozen_stirng_literal: true
+# frozen_string_literal: true
 
 module Benchmark
   class Malloc

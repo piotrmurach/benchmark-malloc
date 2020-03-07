@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'objspace'
+require "objspace"
 
 module Benchmark
   class Malloc

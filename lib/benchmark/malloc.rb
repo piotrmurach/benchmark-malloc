@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'objspace'
+require "objspace"
 
-require_relative 'malloc/allocation'
-require_relative 'malloc/allocation_set'
-require_relative 'malloc/allocation_result'
-require_relative 'malloc/version'
+require_relative "malloc/allocation"
+require_relative "malloc/allocation_set"
+require_relative "malloc/allocation_result"
+require_relative "malloc/version"
 
 module Benchmark
   class Malloc
@@ -31,7 +31,7 @@ module Benchmark
     def initialize(warmup: 0)
       @warmup = warmup
       @running = false
-      @alloc_path = ::File.join(__FILE__[0...-3], 'allocation.rb')
+      @alloc_path = ::File.join(__FILE__[0...-3], "allocation.rb")
     end
 
     # @api private
