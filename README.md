@@ -1,14 +1,14 @@
 # Benchmark::Malloc
 
 [![Gem Version](https://badge.fury.io/rb/benchmark-malloc.svg)][gem]
-[![Build Status](https://secure.travis-ci.org/piotrmurach/benchmark-malloc.svg?branch=master)][travis]
+[![Actions CI](https://github.com/piotrmurach/benchmark-malloc/workflows/CI/badge.svg?branch=master)][gh_actions_ci]
 [![Build status](https://ci.appveyor.com/api/projects/status/cp102e33c2a7fx83?svg=true)][appveyor]
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8fbd4a0423fd78d8bee/maintainability)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/github/piotrmurach/benchmark-malloc/badge.svg?branch=master)][coverage]
 [![Inline docs](http://inch-ci.org/github/piotrmurach/benchmark-malloc.svg?branch=master)][inchpages]
 
 [gem]: http://badge.fury.io/rb/benchmark-malloc
-[travis]: http://travis-ci.org/piotrmurach/benchmark-malloc
+[gh_actions_ci]: https://github.com/piotrmurach/benchmark-malloc/actions?query=workflow%3ACI
 [appveyor]: https://ci.appveyor.com/project/piotrmurach/benchmark-malloc
 [codeclimate]: https://codeclimate.com/github/piotrmurach/benchmark-malloc/maintainability
 [coverage]: https://coveralls.io/github/piotrmurach/benchmark-malloc?branch=master
