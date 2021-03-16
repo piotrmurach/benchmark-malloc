@@ -1,3 +1,12 @@
+AllCops:
+  NewCops: enable
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 82
+
 Lint/AssignmentInCondition:
   Enabled: false
 
@@ -7,7 +16,7 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   CountComments: true
   Max: 25
-  ExcludedMethods: []
+  IgnoredMethods: []
   Exclude:
     - "spec/**/*"
 
@@ -17,27 +26,16 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/LineLength:
-  Max: 80
-
 Metrics/MethodLength:
   Max: 20
 
 Naming/BinaryOperatorParameterName:
   Enabled: false
 
-Style/AsciiComments:
+Style/AccessorGrouping:
   Enabled: false
 
-Style/LambdaCall:
-  SupportedStyles:
-  - call
-  - braces
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-Style/TrivialAccessors:
+Style/AsciiComments:
   Enabled: false
 
 # { ... } for multi-line blocks is okay
@@ -45,4 +43,19 @@ Style/BlockDelimiters:
   Enabled: false
 
 Style/CommentedKeyword:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/LambdaCall:
+  EnforcedStyle: braces
+
+Style/StringConcatenation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrivialAccessors:
   Enabled: false
