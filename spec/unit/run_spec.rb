@@ -18,7 +18,7 @@ RSpec.describe Benchmark::Malloc do
     sample = memory.run do
       _new_object = Object.new
       _new_array  = [:baz]
-      _new_string = 'foo' + 'baz'
+      _new_string = "foo" + "baz"
     end
 
     # allocated
@@ -53,8 +53,8 @@ RSpec.describe Benchmark::Malloc do
 
     expect(result.allocated.total_objects).to eq(10 * 3)
     expect(result.allocated.total_memory).to be <= (3120)
-    expect(result.allocated.count_objects).to eq({
-      Array => 10, String => 10, Hash => 10})
+    expect(result.allocated.count_objects)
+      .to eq({ Array => 10, String => 10, Hash => 10 })
 
     # memory
     expect(result.allocated.count_memory[Array]).to be <= 400
