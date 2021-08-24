@@ -5,14 +5,14 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/cp102e33c2a7fx83?svg=true)][appveyor]
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8fbd4a0423fd78d8bee/maintainability)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/github/piotrmurach/benchmark-malloc/badge.svg?branch=master)][coverage]
-[![Inline docs](http://inch-ci.org/github/piotrmurach/benchmark-malloc.svg?branch=master)][inchpages]
+[![Inline docs](https://inch-ci.org/github/piotrmurach/benchmark-malloc.svg?branch=master)][inchpages]
 
-[gem]: http://badge.fury.io/rb/benchmark-malloc
+[gem]: https://badge.fury.io/rb/benchmark-malloc
 [gh_actions_ci]: https://github.com/piotrmurach/benchmark-malloc/actions?query=workflow%3ACI
 [appveyor]: https://ci.appveyor.com/project/piotrmurach/benchmark-malloc
 [codeclimate]: https://codeclimate.com/github/piotrmurach/benchmark-malloc/maintainability
 [coverage]: https://coveralls.io/github/piotrmurach/benchmark-malloc?branch=master
-[inchpages]: http://inch-ci.org/github/piotrmurach/benchmark-malloc
+[inchpages]: https://inch-ci.org/github/piotrmurach/benchmark-malloc
 
 > Trace memory allocations and collect stats.
 
@@ -77,7 +77,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/piotrmurach/benchmark-malloc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/piotrmurach/benchmark-malloc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/piotrmurach/benchmark-malloc/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
