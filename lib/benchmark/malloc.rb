@@ -126,10 +126,12 @@ module Benchmark
         next if ObjectSpace.allocation_sourcefile(object).nil?
         next if ObjectSpace.allocation_sourcefile(object) == __FILE__
         next if ObjectSpace.allocation_sourcefile(object) == @alloc_path
-        next if @existing_ids.include?(object.__id__)
 
         allocations[object.__id__] = Allocation.new(object)
       end
+
+      @existing_ids.each { |key| allocations.delete(key) }
+
       allocations
     end
   end # Malloc
